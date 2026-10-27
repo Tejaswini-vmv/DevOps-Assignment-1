@@ -1,0 +1,7 @@
+services:
+  web:
+    image: my-docker-app:1.0
+    container_name: my-docker-compose-container
+    ports:
+      - "8086:80"
+    restart: unless-stopped
